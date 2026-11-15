@@ -31,10 +31,13 @@ The typical recovery rate is applied to the deficit measured in the crew member.
 ratio \(r_m\) fixes the individual deficit
 
 \[
-D_i = (1 - r_m)\, e^{t_m/\tau_c}
+D_i = \max\!\left(0,\; (1 - r_m)\, e^{t_m/\tau_c}\right)
 \]
 
-so that the curve passes through the measurement. The time after the session at which the curve reaches the GO
+so that, for a score below baseline, the curve passes through the measurement. A score at or above baseline gives
+\(D_i = 0\): the curve is then flat at baseline, because the recovery model cannot represent a score above it. With
+a planned dose, the drug effect is subtracted from this curve, so a score above baseline is treated as baseline when
+the dose effect is forecast. The time after the session at which the curve reaches the GO
 threshold \(q_c\) is
 
 \[
