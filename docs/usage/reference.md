@@ -10,7 +10,7 @@
 | Control | Description |
 |---|---|
 | **Load an example** | Fills every control with a recorded or simulated test and resets the pharmacological scenario to no dose. The examples are listed below. |
-| **Crew member baseline** | Preflight baseline and age group. The reference scores of three HBEDB participants serve as preflight proxies. Changing the crew member clears the session history. |
+| **Crew member baseline** | Three option buttons. Preflight baseline and age group. The reference scores of three HBEDB participants serve as preflight proxies. Changing the crew member clears the session history. |
 | **After landing** | Off for a baseline-day test. On for a test after landing, which enables the time control, the retest estimate and the comparison with NASA crew. |
 | **Hours after landing** | 0.5–240 h in steps of 0.5 h. |
 | **Set scores to typical NASA crew recovery at this time** | Replaces the scores with the participant's own trial spread placed on the typical NASA recovery curve at the chosen time. Falls and invalid recordings are kept. |
@@ -19,6 +19,16 @@
 | **Trial outcome** | *completed*, *fall* or *invalid recording*, for each condition. |
 | **Record this session** | Stores the current session with its trial scores, outcomes, time and source, and advances the time by 2 h. Available after a landing, up to 240 h. |
 | **Clear sessions** | Removes every recorded session. |
+
+Further controls in the tabs:
+
+| Control | Description |
+|---|---|
+| **Planned dose (mg)** | Pharmacological scenario tab: 0, 12.5, 25 or 50 mg of promethazine. 0 switches the scenario off. Available only after a landing, when every condition has a valid recording and no fall has occurred. |
+| **Route** | Oral or intramuscular. |
+| **Dose time** | 0–48 h after the current session, in steps of 0.5 h. |
+| **Condition** | From force plate to score tab: the sensory condition whose recorded baseline trial is shown. |
+| **Analyte** | Additional crew data tab: one of seven blood analytes. |
 
 ## Outputs
 
@@ -61,9 +71,12 @@ applies sets the result. The numbered rules are listed under the table, with the
 
 ### Estimated retest time
 
-Shown after a landing when the result is CAUTION or NO-GO. The chart shows the recovery curve of the condition that
-reaches its GO threshold last, the estimated retest time and its range. When a GO threshold cannot be reached, no
-time is shown and the card refers the crew member to the crew surgeon.
+Shown after a landing when every condition has a valid recording, no fall has occurred and the session is not GO.
+It is also shown for a GO session when a planned dose is predicted to lower a score below its GO threshold. It is not
+shown for a GO session awaiting confirmation without a dose, after a fall, or for CANNOT ASSESS. The chart shows the recovery curve of the condition that
+reaches its GO threshold last, the estimated retest time and its range. Conditions already at or above their GO threshold need no recovery. When the GO threshold of a
+condition still below it cannot be reached, no time is shown and the card refers the crew member to the crew
+surgeon. A retest time later than 240 h after landing is labelled as an extrapolation.
 
 ### Recovery compared with typical NASA crew
 

@@ -3,6 +3,13 @@
 The values below are produced by `scripts/validate.py` from the full Human Balance Evaluation Database (163 adults,
 1,930 trials) and are reported in `out/VALIDATION.md` in the repository.
 
+## Reference cohort
+
+In this model, the healthy reference group comprises HBEDB participants without a reported disability, excluding
+those reporting labyrinthitis. Other illnesses and medication are not excluded: of the 140 participants, 86 report an
+illness and 89 a medication. The group therefore represents a general adult population rather than a screened
+astronaut population, and its floors and margins are a conservative proxy for crew values.
+
 ## Calibration against NASA crew preflight scores
 
 Healthy adults aged 25–55 years (n = 43), scored with the method described in

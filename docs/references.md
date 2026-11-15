@@ -3,7 +3,7 @@
 Bermúdez Rey MC, Clark TK, Wang W, Leeder T, Bian Y, Merfeld DM. Vestibular perceptual thresholds increase above the
 age of 40. *Frontiers in Neurology* 2016;7:162. <https://doi.org/10.3389/fneur.2016.00162>
 
-Boyd, Wang and Putcha. Bioavailability of promethazine during spaceflight. NASA Technical Reports Server
+Boyd JL, Wang Z, Putcha L. Bioavailability of promethazine during spaceflight. NASA Technical Reports Server
 20090001322, 2009. <https://ntrs.nasa.gov/citations/20090001322>
 
 Diaz-Artiles A, Priesol AJ, Clark TK, Sherwood DP, Oman CM, Young LR, Karmali F. The impact of oral promethazine on
@@ -13,8 +13,9 @@ human whole-body motion perceptual thresholds. *Journal of the Association for R
 Gandia P, Saivin S, Le-Traon AP, Guell A, Houin G. Influence of simulated weightlessness on the intramuscular and
 oral pharmacokinetics of promethazine in 12 human volunteers. *Journal of Clinical Pharmacology* 2006;46(9):1008–1016. <https://doi.org/10.1177/0091270006291032>
 
-Goldberger AL, Amaral LAN, Glass L, et al. PhysioBank, PhysioToolkit, and PhysioNet. *Circulation*
-2000;101(23):e215–e220.
+Goldberger AL, Amaral LAN, Glass L, et al. PhysioBank, PhysioToolkit, and PhysioNet: components of a new research
+resource for complex physiologic signals. *Circulation* 2000;101(23):e215–e220.
+<https://doi.org/10.1161/01.CIR.101.23.e215>
 
 Jain V, Wood SJ, Feiveson AH, Black FO, Paloski WH. Diagnostic accuracy of dynamic posturography testing after
 short-duration spaceflight. *Aviation, Space, and Environmental Medicine* 2010;81(7):625–631.

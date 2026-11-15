@@ -20,9 +20,9 @@ standing-balance test into one of four results, **GO**, **CAUTION**, **NO-GO** o
 that produced it and states the next action. When the result is not GO, it estimates the retest time from the
 published NASA crew recovery model.
 
-The model is deterministic. Every threshold is computed from published values or from healthy reference data, and
-every result can be traced to a numbered rule. No model is trained, because no public dataset labels individuals as
-fit or unfit to leave a vehicle.
+The model is deterministic. The thresholds combine published values, reference data from healthy adults and stated
+design choices, each documented with its source, and every result can be traced to a numbered rule. No model is
+trained, because no public dataset known to us labels individuals as fit or unfit to leave a vehicle.
 
 ## The decision in one picture
 

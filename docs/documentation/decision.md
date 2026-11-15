@@ -18,8 +18,9 @@ For each condition, the rules are applied in numerical order, and the first rule
 score as recovery. A score below 75% of baseline therefore yields NO-GO.
 
 **Rule 4: the population floor.** Jain et al. (2010) regarded a score below the 5th percentile of normative data as
-clinically abnormal. The floor \(P5_c\) is the 5th percentile of healthy HBEDB reference scores in the same condition
-and age group. A crew member whose score is below the floor is referred to the crew surgeon, even when the score is
+clinically abnormal. The floor \(P5_c\) is the 5th percentile of reference scores in the same condition and age group,
+from HBEDB participants without a reported disability, excluding reported labyrinthitis (see
+[Validation](validation.md)). A crew member whose score is below the floor is referred to the crew surgeon, even when the score is
 close to their own baseline.
 
 ## The GO threshold
@@ -39,13 +40,30 @@ median of three baseline trials when no true change has occurred. It is the larg
   200,000 times.
 - **From the literature.** The minimal detectable change of the head-shake Sensory Organization Test reported by Pang et al.
   (2011), 2.7 (younger) and 3.6 (older) points on the firm conditions and 16.2 and 22.7 points on the foam
-  conditions, converted to a per-trial spread and simulated 100,000 times at each baseline level.
+  conditions. Each value, reported for a five-trial mean, is converted to a per-trial standard deviation,
+  \(\mathrm{MDC}\sqrt{5}/(1.96\sqrt{2})\), and three-trial medians are simulated 100,000 times at each baseline
+  level with independent, normally distributed errors.
+
+The literature margin is a transfer. Pang et al. measured five-trial means with head movements on firm and
+sway-referenced surfaces and divided age groups at 50 years. Here it is applied to three-trial medians with the head
+still, including foam, with the HBEDB age groups divided at 60 years. Taking the larger of the two margins is the
+cautious choice.
 
 If \(q_c \ge 1\), the GO threshold lies at or above baseline. GO is then not reachable under the recovery model, and
 no retest time is estimated.
 
 **Example.** For participant A on foam with eyes closed, \(b = 84.7\), \(q_{95} = 1.267\) and \(P5 = 77.1\), so
 \(q = \max(0.950, 0.910) = 0.950\). A score must reach 95% of baseline for GO.
+
+## Published values and design choices
+
+| Quantity | Origin |
+|---|---|
+| 75% line | Published: working definition of recovery (Jain et al. 2010) |
+| 5th-percentile floor | Published criterion (Jain et al. 2010), computed from HBEDB reference data |
+| Test–retest margin | Computed from HBEDB data and from published values (Pang et al. 2011), with the transfer assumptions above |
+| Two sessions, at least 2 h apart | Design choice |
+| Recovery model | Published (Wood et al. 2015, Table III) |
 
 ## Overall result (rule 7)
 

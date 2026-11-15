@@ -15,6 +15,7 @@ provisional decision assumption informed by NASA working definitions, not a vali
 | A6 | The zero-point-to-zero-point centre-of-mass estimator gives scores comparable with the NASA estimator. | Calibration on the firm conditions |
 | A7 | Recovery after landing on the Moon (0.17 g) or Mars (0.38 g) follows the Earth-return data. | Not characterised (transfer assumption) |
 | A8 | The test is administered with a spotter or a safety harness. | Test design |
+| A9 | Two GO sessions at least 2 h apart are sufficient confirmation. | Design choice |
 
 ## Limitations
 
@@ -28,5 +29,13 @@ provisional decision assumption informed by NASA working definitions, not a vali
 - Under literature-level test–retest variability, older adults rarely reach GO on foam. This is a deliberate safety
   trade-off.
 - The single-exponential model of Wood et al. (2015) does not represent the slower recovery phase over the
-  following weeks. The supported range is 240 h after landing.
+  following weeks. Sessions can be recorded up to 240 h after landing. A retest time later than 240 h is labelled
+  in the application as an extrapolation of the recovery model.
+- The healthy reference group is a general adult population (participants without a reported disability,
+  excluding labyrinthitis) rather than a screened astronaut population.
+- A reliable preflight baseline requires familiarisation sessions. The protocol is not specified here.
+- Tolerability of foam testing on landing day is unresolved. Jain et al. (2010) report that it was abandoned after
+  one Shuttle crew reported concern that it disrupted their postflight recovery.
+- The literature test–retest margin is transferred from a different protocol and age split (Pang et al. 2011), as
+  described in [Decision rules](decision.md).
 - The pharmacological scenario is unvalidated and adjusts only the retest estimate.

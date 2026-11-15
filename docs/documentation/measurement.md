@@ -14,6 +14,9 @@ The crew member stands still on a force plate for three 20-s trials in each of f
 Condition 5, with eyes closed on a sway-referenced support, is the condition most affected after spaceflight because
 the crew member must rely on the vestibular system. NASA uses a sway-referenced platform. This prototype uses foam,
 which Jain et al. (2010) proposed as a simpler substitute while noting that the two are not strictly equivalent.
+They also report that foam testing was tried with one Shuttle crew on landing day and abandoned after the crew
+reported concern that it disrupted their postflight recovery. Tolerability of the test on landing day is therefore
+unresolved.
 
 The test challenges balance in crew members who may fall. It is administered with a spotter or a safety harness,
 and a fall is recorded as a trial outcome.
@@ -72,3 +75,8 @@ r_c = \frac{\operatorname{median}(\mathrm{EQ}_{c,1}, \mathrm{EQ}_{c,2}, \mathrm{
 
 The baseline \(b_c\) is the median of the three preflight trials. A score is never compared with a baseline from a
 different condition.
+
+Balance scores improve with repeated testing. Jain et al. (2010) excluded the first two preflight sessions for this
+reason, and Wood et al. (2015) used the last of two preflight sessions. A baseline taken without familiarisation
+underestimates true performance and inflates later ratios. The familiarisation protocol is not specified in this
+prototype, and the single-session HBEDB recordings used as preflight proxies cannot establish it.

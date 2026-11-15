@@ -20,8 +20,9 @@ method, the source of every value and the assumption it rests on.
 3. **Rules are explicit and ordered.** Every result names the rule that produced it.
 4. **Uncertainty favours a retest.** Test–retest variability is allowed for before GO is returned, and an overall GO
    requires two sessions.
-5. **Nothing is trained.** No public dataset labels individuals as fit or unfit to leave a vehicle, so every
-   threshold is derived from published values or from healthy reference data.
+5. **Nothing is trained.** No public dataset known to us labels individuals as fit or unfit to leave a vehicle.
+   The thresholds combine published values, healthy reference data and stated design choices, such as the 2-h
+   interval between sessions.
 
 ## Architecture
 
