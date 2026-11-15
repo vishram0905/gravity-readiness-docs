@@ -1,11 +1,14 @@
 # How to use the app
 
+**[Open the app](../app/){ target="_blank" }** in any modern browser. No installation or sign-in is needed. The
+model runs entirely in the browser, so the first visit takes about 20–40 s to load and later visits are faster.
+
 The application is an interactive model. The inputs of a balance test are set on the left of the page, and the
 model output on the right updates immediately. No button needs to be pressed to obtain a result.
 
-## Installation
+## Running it locally
 
-The application requires Python 3.11 or later.
+The application can also be run on a local machine with Python 3.11 or later.
 
 ```bash
 git clone https://github.com/vishram0905/gravity-readiness.git
