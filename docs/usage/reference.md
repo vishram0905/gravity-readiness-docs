@@ -25,7 +25,7 @@ Further controls below the results:
 
 | Control | Description |
 |---|---|
-| **Planned dose (mg)** | Pharmacological scenario panel, directly below the retest chart: 0, 12.5, 25 or 50 mg of promethazine. 0 switches the scenario off. Available only after a landing, when every condition has a valid recording and no fall has occurred. |
+| **Planned dose (mg)** | Pharmacological scenario panel in the input column, below the condition sliders (its effect appears under the retest chart): 0, 12.5, 25 or 50 mg of promethazine. 0 switches the scenario off. Available only after a landing, when every condition has a valid recording and no fall has occurred. |
 | **Route** | Oral or intramuscular. |
 | **Dose time** | 0–48 h after the current session, in steps of 0.5 h. |
 | **Condition** | From force plate to score tab: the sensory condition whose recorded baseline trial is shown. |
