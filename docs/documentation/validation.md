@@ -52,7 +52,7 @@ rule operates as specified. It is not evidence of safety.
 
 ## Automated tests
 
-The test suite (197 tests in the published version of 15 November 2026) checks:
+The test suite (201 tests in the published version of 15 November 2026) checks:
 
 - every rule against an independent statement of the arithmetic, on 200,000 random inputs including invalid ones,
 - the exact thresholds and malformed inputs,

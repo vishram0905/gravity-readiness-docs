@@ -10,6 +10,7 @@
 | Control | Description |
 |---|---|
 | **Load an example** | Fills every control with a recorded or simulated test and resets the pharmacological scenario to no dose. The examples are listed below. |
+| **Reset to this example's values** | Restores the crew member, the time, every score and trial outcome, the session history and the pharmacological scenario to the values of the selected example. The input mode and the condition shown in the *From force plate to score* tab are kept. |
 | **Crew member baseline** | Three option buttons. Preflight baseline and age group. The reference scores of three HBEDB participants serve as preflight proxies. Changing the crew member clears the session history. |
 | **After landing** | Off for a baseline-day test. On for a test after landing, which enables the time control, the retest estimate and the comparison with NASA crew. |
 | **Hours after landing** | 0.5–240 h in steps of 0.5 h. |
@@ -20,11 +21,11 @@
 | **Record this session** | Stores the current session with its trial scores, outcomes, time and source, and advances the time by 2 h. Available after a landing, up to 240 h. |
 | **Clear sessions** | Removes every recorded session. |
 
-Further controls in the tabs:
+Further controls below the results:
 
 | Control | Description |
 |---|---|
-| **Planned dose (mg)** | Pharmacological scenario tab: 0, 12.5, 25 or 50 mg of promethazine. 0 switches the scenario off. Available only after a landing, when every condition has a valid recording and no fall has occurred. |
+| **Planned dose (mg)** | Pharmacological scenario panel, directly below the retest chart: 0, 12.5, 25 or 50 mg of promethazine. 0 switches the scenario off. Available only after a landing, when every condition has a valid recording and no fall has occurred. |
 | **Route** | Oral or intramuscular. |
 | **Dose time** | 0–48 h after the current session, in steps of 0.5 h. |
 | **Condition** | From force plate to score tab: the sensory condition whose recorded baseline trial is shown. |
