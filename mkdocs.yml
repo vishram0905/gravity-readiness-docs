@@ -1,0 +1,97 @@
+site_name: Gravity-Transition Readiness
+site_description: >-
+  Decision support for crew egress after landing: a standing-balance test scored against the crew member's own
+  baseline, seven explicit safety rules and a retest estimate from NASA crew recovery data.
+site_url: https://vishram0905.github.io/gravity-readiness-docs/
+repo_url: https://github.com/vishram0905/gravity-readiness
+repo_name: vishram0905/gravity-readiness
+copyright: >-
+  NASA Space Apps Challenge 2026 · Create Health Monitoring Software for Astronauts on Space Missions<br>
+  Prototype for research and demonstration. Not a medical device. No NASA endorsement is implied.
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  font:
+    text: IBM Plex Sans
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.tooltips
+  icon:
+    logo: material/rocket-launch-outline
+
+extra_css:
+  - stylesheets/extra.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+nav:
+  - Home: index.md
+  - How to use the app:
+      - usage/index.md
+      - "A worked session": usage/walkthrough.md
+      - "Inputs and outputs": usage/reference.md
+  - Documentation:
+      - documentation/index.md
+      - "Measurement and score": documentation/measurement.md
+      - "Decision rules": documentation/decision.md
+      - "Retest estimate": documentation/forecast.md
+      - "Pharmacological scenario": documentation/medicine.md
+      - Validation: documentation/validation.md
+      - "Assumptions and limitations": documentation/limitations.md
+  - Data: data.md
+  - Glossary: glossary.md
+  - References: references.md
+  - About: about.md
