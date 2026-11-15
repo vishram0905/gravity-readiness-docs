@@ -2,14 +2,18 @@
   --md-primary-fg-color: #2F6690;
   --md-primary-fg-color--light: #5F8DB3;
   --md-primary-fg-color--dark: #1B2A3A;
-  --md-accent-fg-color: #C8642B;
-  --access-orange: #C8642B;
+  --md-accent-fg-color: #AD5420;
+  --access-orange: #AD5420;  /* 5.2:1 on white for small orange text */
   --access-blue: #2F6690;
   --access-card: #FFFFFF;
   --access-border: #DCDFE2;
   --access-muted: #4A5568;
 }
 [data-md-color-scheme="slate"] {
+  /* Links and the active navigation entry: the light-scheme blue gives about 2.9:1 on the slate background. */
+  --md-typeset-a-color: #8AB8E0;
+  --md-accent-fg-color: #E8834A;
+  --access-orange: #E8834A;  /* about 6:1 on the slate header and content backgrounds */
   --access-card: #1E2633;
   --access-border: #2E3A4A;
   --access-muted: #B9C3CE;
@@ -108,6 +112,8 @@
 .lp-btn:hover { transform: translateY(-1px); }
 .lp-btn--primary { background: var(--access-navy); color: #fff !important; }
 .lp-btn--primary:hover { background: #0F1A26; }
+[data-md-color-scheme="slate"] .lp-btn--primary { background: #2F6690; }  /* the navy fill disappears on the slate hero */
+[data-md-color-scheme="slate"] .lp-btn--primary:hover { background: #3A78A6; }
 .lp-btn--ghost { background: #fff; color: var(--access-ink) !important; border-color: var(--access-border); }
 .lp-btn--ghost:hover { border-color: var(--access-blue); color: var(--access-blue) !important; }
 [data-md-color-scheme="slate"] .lp-btn--ghost { background: transparent; color: #E6EBF0 !important; }
