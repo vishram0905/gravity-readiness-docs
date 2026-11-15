@@ -771,6 +771,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#published-values-and-design-choices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Published values and design choices
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#overall-result-rule-7" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1077,6 +1088,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#published-values-and-design-choices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Published values and design choices
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#overall-result-rule-7" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1170,8 +1192,9 @@
 <p><strong>Rule 3: the 75% line.</strong> Jain et al. (2010) regarded a decrement of less than 25% from a crew member's own preflight
 score as recovery. A score below 75% of baseline therefore yields NO-GO.</p>
 <p><strong>Rule 4: the population floor.</strong> Jain et al. (2010) regarded a score below the 5th percentile of normative data as
-clinically abnormal. The floor <span class="arithmatex">\(P5_c\)</span> is the 5th percentile of healthy <abbr title="Human Balance Evaluation Database (PhysioNet): 163 adults, 1,930 force-plate trials">HBEDB</abbr> reference scores in the same condition
-and age group. A crew member whose score is below the floor is referred to the crew surgeon, even when the score is
+clinically abnormal. The floor <span class="arithmatex">\(P5_c\)</span> is the 5th percentile of reference scores in the same condition and age group,
+from <abbr title="Human Balance Evaluation Database (PhysioNet): 163 adults, 1,930 force-plate trials">HBEDB</abbr> participants without a reported disability, excluding reported labyrinthitis (see
+<a href="../validation/">Validation</a>). A crew member whose score is below the floor is referred to the crew surgeon, even when the score is
 close to their own baseline.</p>
 <h2 id="the-go-threshold">The GO threshold<a class="headerlink" href="#the-go-threshold" title="Permanent link">&para;</a></h2>
 <p>A single test is noisy. A score just above 75% of baseline may come from a true score below it. The GO threshold
@@ -1187,12 +1210,49 @@ median of three baseline trials when no true change has occurred. It is the larg
   200,000 times.</li>
 <li><strong>From the literature.</strong> The minimal detectable change of the head-shake Sensory Organization Test reported by Pang et al.
   (2011), 2.7 (younger) and 3.6 (older) points on the firm conditions and 16.2 and 22.7 points on the foam
-  conditions, converted to a per-trial spread and simulated 100,000 times at each baseline level.</li>
+  conditions. Each value, reported for a five-trial mean, is converted to a per-trial standard deviation,
+  <span class="arithmatex">\(\mathrm{MDC}\sqrt{5}/(1.96\sqrt{2})\)</span>, and three-trial medians are simulated 100,000 times at each baseline
+  level with independent, normally distributed errors.</li>
 </ul>
+<p>The literature margin is a transfer. Pang et al. measured five-trial means with head movements on firm and
+sway-referenced surfaces and divided age groups at 50 years. Here it is applied to three-trial medians with the head
+still, including foam, with the <abbr title="Human Balance Evaluation Database (PhysioNet): 163 adults, 1,930 force-plate trials">HBEDB</abbr> age groups divided at 60 years. Taking the larger of the two margins is the
+cautious choice.</p>
 <p>If <span class="arithmatex">\(q_c \ge 1\)</span>, the GO threshold lies at or above baseline. GO is then not reachable under the recovery model, and
 no retest time is estimated.</p>
 <p><strong>Example.</strong> For participant A on foam with eyes closed, <span class="arithmatex">\(b = 84.7\)</span>, <span class="arithmatex">\(q_{95} = 1.267\)</span> and <span class="arithmatex">\(P5 = 77.1\)</span>, so
 <span class="arithmatex">\(q = \max(0.950, 0.910) = 0.950\)</span>. A score must reach 95% of baseline for GO.</p>
+<h2 id="published-values-and-design-choices">Published values and design choices<a class="headerlink" href="#published-values-and-design-choices" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Quantity</th>
+<th>Origin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>75% line</td>
+<td>Published: working definition of recovery (Jain et al. 2010)</td>
+</tr>
+<tr>
+<td>5th-percentile floor</td>
+<td>Published criterion (Jain et al. 2010), computed from <abbr title="Human Balance Evaluation Database (PhysioNet): 163 adults, 1,930 force-plate trials">HBEDB</abbr> reference data</td>
+</tr>
+<tr>
+<td>Test–retest margin</td>
+<td>Computed from <abbr title="Human Balance Evaluation Database (PhysioNet): 163 adults, 1,930 force-plate trials">HBEDB</abbr> data and from published values (Pang et al. 2011), with the transfer assumptions above</td>
+</tr>
+<tr>
+<td>Two sessions, at least 2 h apart</td>
+<td>Design choice</td>
+</tr>
+<tr>
+<td>Recovery model</td>
+<td>Published (Wood et al. 2015, Table III)</td>
+</tr>
+</tbody>
+</table>
 <h2 id="overall-result-rule-7">Overall result (rule 7)<a class="headerlink" href="#overall-result-rule-7" title="Permanent link">&para;</a></h2>
 <ul>
 <li>The overall result is that of the least favourable condition, in the order CANNOT ASSESS, NO-GO, CAUTION, GO.</li>
