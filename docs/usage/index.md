@@ -1,6 +1,6 @@
 # How to use the app
 
-**[Open the app](../app/){ target="_blank" }** in any modern browser. No installation or sign-in is needed. The
+**[Open the app](https://vishram0905.github.io/gravity-readiness-app/){ target="_blank" }** in any modern browser. No installation or sign-in is needed. The
 model runs entirely in the browser, so the first visit takes about 20–40 s to load and later visits are faster.
 
 The application is an interactive model. The inputs of a balance test are set on the left of the page, and the
