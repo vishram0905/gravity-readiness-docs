@@ -73,7 +73,8 @@ applies sets the result. The numbered rules are listed under the table, with the
 
 Shown after a landing when every condition has a valid recording, no fall has occurred and the session is not GO.
 It is also shown for a GO session when a planned dose is predicted to lower a score below its GO threshold. It is not
-shown for a GO session awaiting confirmation without a dose, after a fall, or for CANNOT ASSESS. The chart shows the recovery curve of the condition that
+shown for a GO session awaiting confirmation without a dose, after a fall, or when the result is CANNOT ASSESS,
+including session times out of order. The chart shows the recovery curve of the condition that
 reaches its GO threshold last, the estimated retest time and its range. Conditions already at or above their GO threshold need no recovery. When the GO threshold of a
 condition still below it cannot be reached, no time is shown and the card refers the crew member to the crew
 surgeon. A retest time later than 240 h after landing is labelled as an extrapolation.

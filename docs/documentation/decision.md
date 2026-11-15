@@ -49,8 +49,9 @@ sway-referenced surfaces and divided age groups at 50 years. Here it is applied 
 still, including foam, with the HBEDB age groups divided at 60 years. Taking the larger of the two margins is the
 cautious choice.
 
-If \(q_c \ge 1\), the GO threshold lies at or above baseline. GO is then not reachable under the recovery model, and
-no retest time is estimated.
+If \(q_c \ge 1\), the GO threshold lies at or above baseline. A condition whose score is still below such a
+threshold cannot reach it under the recovery model, and no retest time is estimated. A condition already at or above
+its threshold needs no recovery.
 
 **Example.** For participant A on foam with eyes closed, \(b = 84.7\), \(q_{95} = 1.267\) and \(P5 = 77.1\), so
 \(q = \max(0.950, 0.910) = 0.950\). A score must reach 95% of baseline for GO.

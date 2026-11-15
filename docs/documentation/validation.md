@@ -8,7 +8,8 @@ The values below are produced by `scripts/validate.py` from the full Human Balan
 In this model, the healthy reference group comprises HBEDB participants without a reported disability, excluding
 those reporting labyrinthitis. Other illnesses and medication are not excluded: of the 140 participants, 86 report an
 illness and 89 a medication. The group therefore represents a general adult population rather than a screened
-astronaut population, and its floors and margins are a conservative proxy for crew values.
+astronaut population. Its floors and margins are provisional proxies for crew values, and whether they are more or
+less conservative than crew-specific values has not been established.
 
 ## Calibration against NASA crew preflight scores
 

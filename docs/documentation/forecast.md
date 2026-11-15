@@ -49,8 +49,8 @@ If \(q_c \ge 1\) in a condition whose score is still below its threshold, the th
 the model, and no time is given. A condition that is already at or above its threshold needs no recovery and is
 excluded from the estimate, unless a planned dose is predicted to lower it.
 
-A retest time later than 240 h after landing is labelled in the application as an extrapolation of the recovery
-model.
+A retest time later than 240 h after landing, with or without a planned dose, is labelled in the application as
+an extrapolation of the recovery model.
 
 ## Worked example
 
