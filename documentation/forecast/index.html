@@ -1181,9 +1181,12 @@ stated in <a href="../measurement/">Measurement and score</a>.</p>
 <p>The typical recovery rate is applied to the deficit measured in the crew member. A session at time <span class="arithmatex">\(t_m\)</span> with
 ratio <span class="arithmatex">\(r_m\)</span> fixes the individual deficit</p>
 <div class="arithmatex">\[
-D_i = (1 - r_m)\, e^{t_m/\tau_c}
+D_i = \max\!\left(0,\; (1 - r_m)\, e^{t_m/\tau_c}\right)
 \]</div>
-<p>so that the curve passes through the measurement. The time after the session at which the curve reaches the GO
+<p>so that, for a score below baseline, the curve passes through the measurement. A score at or above baseline gives
+<span class="arithmatex">\(D_i = 0\)</span>: the curve is then flat at baseline, because the recovery model cannot represent a score above it. With
+a planned dose, the drug effect is subtracted from this curve, so a score above baseline is treated as baseline when
+the dose effect is forecast. The time after the session at which the curve reaches the GO
 threshold <span class="arithmatex">\(q_c\)</span> is</p>
 <div class="arithmatex">\[
 \Delta t_c = \tau_c \ln\!\left(\frac{1 - r_m}{1 - q_c}\right)
